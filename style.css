@@ -1,8 +1,19 @@
 /* CSS externo */
 
+/* Definir as cores tema dark */
+/* raiz */
+:root,
+:root[data-theme='dark'] {
+ --cor-fundo: #1b1b1b;
+ --cor-texto: #e9e9e9;
+
+} 
+
+
 body {
-  background: black ; /* cor fundo */
-  color: white; /* cor TEXTOS */
+  background: ; /* cor fundo */
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* cor TEXTOS */
 }
 
  a {
@@ -26,6 +37,7 @@ header {
  .menu-desktop {
   background: royalblue;
   display: none;  
+
  } 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
