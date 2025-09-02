@@ -14,7 +14,7 @@
 :root[data-theme='light'] {
   --cor-fundo: #ffd7e9;
   --cor-texto: #1b1b1b;
-   --menu-link: #ffffff;
+   --menu-link: #000000;
    --cor-borda: #ffbccb;
 }
    
@@ -41,17 +41,46 @@ header {
   width: 100%;
   background: rgb(250, 10, 110);
   border-bottom: 5px solid var(--cor-borda);
+
 }
 
  .menu-desktop {
   background: rgb(250, 10, 110);;
   display: none;  
-
  } 
+
+/* NAV. UL*/
+.menu {
+  display: flex;
+  gap: 1rem; /* 16px */
+  align-items: center;
+  
+}
+
+/* LI - listas */
+.menu-item {
+width: 100%;
+  
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+}
+.menu-text {
+color: var(--menu-link);
+font-size: 1.2rem;
+text-transform: uppercase;
+}
+
+/* Menu tres tracinhos */
+
+
 /* Medidas Responsivas */
 @media (min-width: 768px) {
 .menu-desktop {
   display: flex;
   }
 }
+
 
