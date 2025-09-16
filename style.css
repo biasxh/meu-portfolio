@@ -130,6 +130,16 @@ width: 100%;
   font-size: 1rem;
 }
 
+.logo {
+  width: 3rem ; /* comprimento */ 
+  height: 4.25rem ; /* altura */
+}
+
+.header-toggle {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
 
 
 /* Medidas Responsivas */
