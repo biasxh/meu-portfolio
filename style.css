@@ -5,7 +5,7 @@
 :root,
 :root[data-theme='dark'] {
  --cor-fundo: #000000;
- --cor-texto: #000000;
+ --cor-texto: #e9e9e9;
  --menu-link: #ffffff;
  --cor-borda: #ffbccb;
 
@@ -13,16 +13,11 @@
 } 
 :root[data-theme='light'] {
   --cor-fundo: #ffd7e9;
-  --cor-texto: #e9e9e9;
-   --menu-link:#e9e9e9;
+  --cor-texto: #000000;
+   --menu-link: #000000;
    --cor-borda: #a91c65;
 }
    
-/* Reset CSS = Padronizar */
-*{
-  margin: 0;
-  padding: 0;
-}
 
 body {
   background: var(--cor-fundo) ; /* cor fundo */
@@ -45,9 +40,8 @@ header {
   align-items: center;
   width: 100%;
   background: rgb(250, 10, 110);
-  border-bottom: 2px solid var(--cor-borda);
-  position: fixed; /* Voltar */
-  z-index: 9999; /* camada */
+  border-bottom: 5px solid var(--cor-borda);
+
 }
 
  .menu-desktop {
@@ -146,7 +140,20 @@ display: flex;
 justify-content: flex-end;
 align-items: center;
 }
+#home {
+    padding: 4.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+ }
+.main-content {
+    display: flex;
+    flex-direction: column;
+   gap: 1.5rem;
+}
 
+h1 {
+    font-size: 2.5rem;
+}
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
@@ -161,5 +168,27 @@ align-items: center;
 .header-toggle {
   min-width: 30%;
  }
+ header {
+        padding: 1rem 6rem;
+    }
 
+    h1 {
+        font-size: 5rem;
+    }
+
+    #home {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+  
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+      }
+ }
+
+ @media(min-width:1400px) {
+  h1 {
+    font-size: 10rem;
+  }
  }
