@@ -144,7 +144,8 @@ align-items: center;
     padding: 4.5rem 1rem;
     display: flex;
     flex-direction: column;
- }
+    gap: 1.5rem; 
+  }
 .main-content {
     display: flex;
     flex-direction: column;
@@ -153,11 +154,52 @@ align-items: center;
 
 h1 {
     font-size: 2.5rem;
+    color: rgb(189, 18, 78);
 }
 
+h2 {
+    color: rgb(189, 18, 78);
+}
+
+h3 {
+    color: rgb(189, 18, 78);
+}
+
+.video iframe {
+  aspect-ratio: 16/9;
+}
+
+#home,  
+.produtos, 
+.sobre, 
+.contato {
+padding: 2.5rem 1rem;
+}
+
+.descricao-video {
+  display: flex;
+  flex-direction: column;
+  background: rgb(189, 18, 78);
+  padding: 6.25rem 1rem 2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.descricao-video h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: -2rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(228, 137, 255);
+ /* letter spacing */
+}
+
+
 /* Medidas Responsivas */
-@media (min-width: 768px) {
-.menu-desktop {
+ @media (min-width: 768px) {
+
+
+  .menu-desktop {
   display: flex; 
   min-width: 30%;
   }
@@ -176,7 +218,15 @@ h1 {
         font-size: 5rem;
     }
 
-    #home {
+    .descricao-video,
+    .produtos,
+    .sobre {
+      padding: 10rem 15rem 4rem;
+    }
+
+    #home, 
+    .produtos, 
+    .sobre {
         padding: 8rem 6rem 4rem 6rem;
     }
   
