@@ -149,12 +149,12 @@ align-items: center;
 .main-content {
     display: flex;
     flex-direction: column;
-   gap: 1.5rem;
+   gap: 2.5rem;
 }
 
 h1 {
     font-size: 2.5rem;
-    color: rgb(189, 18, 78);
+    color: rgb(219, 89, 134);
 }
 
 h2 {
@@ -183,6 +183,9 @@ padding: 2.5rem 1rem;
   padding: 6.25rem 1rem 2rem;
   align-items: center;
   justify-content: flex-start;
+  text-align: center;
+  margin-top: -7.2rem;
+  text-transform: uppercase;
 }
 
 .descricao-video h2{
@@ -237,7 +240,7 @@ padding: 2.5rem 1rem;
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 2.5rem;
     }
 
     .descricao-video,
@@ -270,6 +273,6 @@ padding: 2.5rem 1rem;
 
  @media(min-width:1400px) {
   h1 {
-    font-size: 10rem;
+    font-size: 2rem;
   }
  }
