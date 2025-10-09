@@ -186,12 +186,34 @@ padding: 2.5rem 1rem;
 }
 
 .descricao-video h2{
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin-top: -2rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(228, 137, 255);
  /* letter spacing */
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.produtos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.produtos-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.img-card{
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 
@@ -235,6 +257,15 @@ padding: 2.5rem 1rem;
         flex-direction: column;
         align-items: flex-start; 
       }
+ } /* Fim min 768 */
+
+ @media (min-width: 992px) {
+  .produtos-card {
+    flex-direction: row;
+  }
+  .img-card {
+    width: 30%;
+  }
  }
 
  @media(min-width:1400px) {
