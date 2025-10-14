@@ -216,7 +216,26 @@ padding: 2.5rem 1rem;
 
 .img-card{
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card-title {
+  color: rgb(255, 167, 201); /* Cor texto */
+ font-size: 1.5rem; /* tamanho texto */
+  font-weight: 1.5rem; /* Largura do texto */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Estilo das fontes */
+}
+
+.card-lista {
+  
 }
 
 
@@ -267,7 +286,7 @@ padding: 2.5rem 1rem;
     flex-direction: row;
   }
   .img-card {
-    width: 30%;
+    width: 70%;
   }
  }
 
