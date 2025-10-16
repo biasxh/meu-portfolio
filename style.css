@@ -1,3 +1,6 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* CSS externo */
 
 /* Definir as cores tema dark */
@@ -15,7 +18,7 @@
   --cor-fundo: #ffd7e9;
   --cor-texto: #000000;
    --menu-link: #000000;
-   --cor-borda: #a91c65;
+   --cor-borda: #a91c46;
 }
    
 
@@ -155,13 +158,20 @@ align-items: center;
 h1 {
     font-size: 2.5rem;
     color: rgb(219, 89, 134);
+    font-family: "Open Sans", sans-serif;
 }
 
 h2 {
+font-family: "Alan Sans", sans-serif;
+font-size: ;
+
     color: rgb(189, 18, 78);
 }
 
 h3 {
+  font-size: 1.55rem;
+  font-family: "Bitter", serif-;
+  font-weight: 900;
     color: rgb(189, 18, 78);
 }
 
@@ -216,7 +226,7 @@ padding: 2.5rem 1rem;
 
 .img-card{
   width: 100%;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
 }
 
 .card-body {
@@ -235,7 +245,11 @@ padding: 2.5rem 1rem;
 }
 
 .card-lista {
-  
+
+}
+
+.card-descricao {
+
 }
 
 
@@ -282,16 +296,53 @@ padding: 2.5rem 1rem;
  } /* Fim min 768 */
 
  @media (min-width: 992px) {
-  .produtos-card {
+   .produtos-card {
     flex-direction: row;
+   }
+   .img-card {
+    width: 55%;
+   }
+   .reverse-card {
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   }
   }
-  .img-card {
-    width: 70%;
+ 
+ @media (min-width: 1200px) {
+  h2 {
+    font-size: 4rem;
   }
  }
 
+
  @media(min-width:1400px) {
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+  h2 {
+ font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
   }
  }
+
+ .video {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.video .img-card {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    
+    .video .img-card {
+        width: 85%;
+        max-width: 1200px;
+    }
+}
