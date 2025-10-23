@@ -8,17 +8,24 @@
 :root,
 :root[data-theme='dark'] {
  --cor-fundo: #000000;
- --cor-texto: #e9e9e9;
+ --cor-texto: rgb(216, 101, 141);
  --menu-link: #ffffff;
  --cor-borda: #ffbccb;
+--cor--hover-icone: #e86c91;
+--cor-p: #ffc2d7;
+
+
 
 
 } 
 :root[data-theme='light'] {
   --cor-fundo: #ffd7e9;
-  --cor-texto: #000000;
+  --cor-texto: rgb(189, 18, 78);
    --menu-link: #000000;
    --cor-borda: #a91c46;
+   --cor--hover-icone: #eb246a;
+   --cor-p: #f52c72;
+
 }
 
   /* Inverter Cor LOGO = Filtro */
@@ -60,6 +67,8 @@ header {
   width: 100%;
   background: rgb(250, 10, 110);
   border-bottom: 5px solid var(--cor-borda);
+  position: fixed;
+  z-index: 9999;
 
 }
 
@@ -159,6 +168,13 @@ display: flex;
 justify-content: flex-end;
 align-items: center;
 }
+
+.header-toggle i {
+  font-size: 2rem;
+  color: #000000;
+  cursor: pointer;
+}
+
 #home {
     padding: 4.5rem 1rem;
     display: flex;
@@ -171,24 +187,29 @@ align-items: center;
     gap: 2.5rem;
  }
 
+ .main-content p {
+  font-size: 2rem;
+  color: var(--cor-p);
+ }
+
  h1 {
     font-size: 3rem;
     color: rgb(219, 89, 134);
  }
 
  h2 {
- font-family: "Alan Sans", sans-serif;
+ font-family:  "Alan Sans, sans-serif";
  font-size: 3rem;
  text-align: center;
  font-weight: bold;
- color: rgb(189, 18, 78);
+ color: rgb(255, 73, 137);
  }
 
  h3 {
   font-size: 1.55rem;
   font-family: "Josefin Sans, sans-serif";
   font-style: italic;
-    color: rgb(189, 18, 78);
+    color: rgb(182, 0, 64);
  }
 
  .video iframe {
@@ -263,16 +284,31 @@ align-items: center;
  .card-descricao {
   font-size: 2rem;
   font-family: "Josefin sans, sans-serif";
-  color: #ffbccb;
+  color: var(--cor-texto);
   font-weight: 8rem;
  }
 
- .card-list {
+ .card-item {
   color: #a91c46;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 0.5rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+ 
+.card-item i {
+ margin-right: 8px;
+}
+
+.card-item i:hover {
+  color: var(--cor--hover-icone);
+  transition: 0.5s ease-in-out;
+}
+
+.redes-sociais i {
+  font-size: 1.5rem;
+}
+
+
  
  @media (max-width: 768px) {
   #home {
