@@ -316,6 +316,14 @@ align-items: center;
   }
  }
 
+ .col6 {
+ background:#e86c91;
+ }
+
+ .col5 {
+ background:aqua;
+ }
+
 /* Medidas Responsivas */
  @media (min-width: 768px) {
 
