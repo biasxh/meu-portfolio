@@ -316,12 +316,16 @@ align-items: center;
   }
  }
 
- .col6 {
+ .col1 {
  background:#e86c91;
  }
 
- .col5 {
- background:aqua;
+ .col2 {
+ background:aqua;                                                              
+ }
+
+ .col3 {
+  background: #e86c91;
  }
 
 /* Medidas Responsivas */
